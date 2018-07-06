@@ -25,6 +25,8 @@ I used [Keycloak in a docker container](https://hub.docker.com/r/jboss/keycloak/
 In theory, any OAuth2 compliant server will do.
 
 ## Running
+TL;DR: `mvn spring-boot:run`
+
 Detailed instructions can be [found here](https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-running-your-application.html) 
 
 # References
