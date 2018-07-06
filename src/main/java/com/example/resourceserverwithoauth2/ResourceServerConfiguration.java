@@ -27,7 +27,8 @@ public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter
 	@Override
 	public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
 		
-		resources.resourceId ("webapp");
+		//The short version is that this must match your OAuth2 client ID.
+		resources.resourceId ("myapp");
 	}
 	 
 	 

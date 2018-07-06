@@ -29,6 +29,11 @@ TL;DR: `mvn spring-boot:run`
 
 Detailed instructions can be [found here](https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-running-your-application.html) 
 
+# Things to watch out for
+- this is intended as a "resource server". In my mind that means API. It expects the caller to have obtained valid 
+   auth token to use as a `Bearer` token elsewhere (i.e. a call to the OAuth2 server).
+   
+
 # References
 - https://dzone.com/articles/spring-boot-2-applications-and-oauth-2-legacy-appr
 - https://docs.spring.io/spring-security-oauth2-boot/docs/current-SNAPSHOT/reference/htmlsingle/
