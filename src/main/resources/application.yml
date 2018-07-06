@@ -1,0 +1,14 @@
+# This is a keycloak url. See https://hub.docker.com/r/jboss/keycloak/ for an easy docker-based start
+ssoServiceUrl: http://localhost:8081/auth/realms/myrealm
+ 
+security:
+  oauth2:
+    client:
+      client-id: myapp
+      client-secret: somesecret
+      access-token-uri: ${ssoServiceUrl}/protocol/openid-connect/token
+      user-authorization-uri: ${ssoServiceUrl}/protocol/openid-connect/auth
+    resource:
+      jwk:
+        keySetUri: ${ssoServiceUrl}/protocol/openid-connect/certs
+      user-info-uri: ${ssoServiceUrl}/protocol/openid-connect/userinfo
