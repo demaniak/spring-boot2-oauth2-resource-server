@@ -31,7 +31,11 @@ public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter
 	@Override
 	public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
 		
-		//The short version is that this must match your OAuth2 client ID - in thise case, "myapp"
+		/*
+		 * The short version is that this must match your OAuth2 client ID - in thise case, "myapp".
+		 * 
+		 * The longer version is that it must match the `aud` claim present in the presented security token.
+		 */
 		resources.resourceId (resourceId);
 	}
 	 
