@@ -10,6 +10,12 @@ What I wanted was:
 
 For some reason, I had difficulty finding the exact recipe required to get this working.
 
+In addition to that, the new Spring Security 5 OAuth2 support does not (yet) seem to support 
+the resource server idea.
+See:
+- https://github.com/spring-projects/spring-security/issues/5226
+- https://github.com/spring-projects/spring-security/issues?q=is%3Aissue+is%3Aopen+label%3AOAuth2
+
 So when I finally DID get it working, I thought I'd throw it out there in case somebody else can benefit.
 
 
